@@ -8,6 +8,7 @@
 
 #import "EarthquakeViewController.h"
 #import <MapKit/MapKit.h>
+#import "LSIQuakeFetcher.h"
 
 @interface EarthquakeViewController ()
 
@@ -17,9 +18,20 @@
 
 @implementation EarthquakeViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _quakeFetcher = [[LSIQuakeFetcher alloc] init];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.quakeFetcher fetchQuakesWithCompletionBlock:^(NSArray *quakes, NSError *error) {
+        NSLog(@"Quakes: %@", quakes);
+    }];
 }
 
 @end

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LSIQuakeFetcher;
 
 @interface EarthquakeViewController : UIViewController
+@property LSIQuakeFetcher *quakeFetcher;
 
 @end
 

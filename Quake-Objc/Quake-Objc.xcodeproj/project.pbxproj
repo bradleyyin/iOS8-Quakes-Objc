@@ -19,6 +19,7 @@
 		75BCC36E234CF821001CA01A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BCC36D234CF821001CA01A /* MapKit.framework */; };
 		75BCC371234CFB52001CA01A /* QuakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 75BCC36F234CFB51001CA01A /* QuakeResponse.json */; };
 		75BCC375234D0045001CA01A /* Quake.json in Resources */ = {isa = PBXBuildFile; fileRef = 75BCC374234D0045001CA01A /* Quake.json */; };
+		75BCC378234D0D06001CA01A /* LSIQuakeFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC377234D0D06001CA01A /* LSIQuakeFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		75BCC36F234CFB51001CA01A /* QuakeResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuakeResponse.json; sourceTree = "<group>"; };
 		75BCC370234CFB52001CA01A /* LSIFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIFileHelper.h; sourceTree = "<group>"; };
 		75BCC374234D0045001CA01A /* Quake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quake.json; sourceTree = "<group>"; };
+		75BCC376234D0D06001CA01A /* LSIQuakeFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIQuakeFetcher.h; sourceTree = "<group>"; };
+		75BCC377234D0D06001CA01A /* LSIQuakeFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				75BCC353234CF216001CA01A /* EarthquakeViewController.m */,
 				75BCC368234CF705001CA01A /* LSIQuake.h */,
 				75BCC369234CF705001CA01A /* LSIQuake.m */,
+				75BCC376234D0D06001CA01A /* LSIQuakeFetcher.h */,
+				75BCC377234D0D06001CA01A /* LSIQuakeFetcher.m */,
 			);
 			path = EarthquakeMap;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			files = (
 				75BCC354234CF216001CA01A /* EarthquakeViewController.m in Sources */,
 				75BCC33B234CEF1E001CA01A /* AppDelegate.m in Sources */,
+				75BCC378234D0D06001CA01A /* LSIQuakeFetcher.m in Sources */,
 				75BCC34C234CEF21001CA01A /* main.m in Sources */,
 				75BCC36A234CF705001CA01A /* LSIQuake.m in Sources */,
 				75BCC33E234CEF1E001CA01A /* SceneDelegate.m in Sources */,
