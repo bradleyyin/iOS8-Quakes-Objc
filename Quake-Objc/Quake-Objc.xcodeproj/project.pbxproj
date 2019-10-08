@@ -16,6 +16,9 @@
 		75BCC356234CF4B3001CA01A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BCC355234CF4B2001CA01A /* Main.storyboard */; };
 		75BCC367234CF651001CA01A /* LSIQuakesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC366234CF651001CA01A /* LSIQuakesTests.m */; };
 		75BCC36A234CF705001CA01A /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC369234CF705001CA01A /* LSIQuake.m */; };
+		75BCC36E234CF821001CA01A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BCC36D234CF821001CA01A /* MapKit.framework */; };
+		75BCC371234CFB52001CA01A /* QuakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 75BCC36F234CFB51001CA01A /* QuakeResponse.json */; };
+		75BCC375234D0045001CA01A /* Quake.json in Resources */ = {isa = PBXBuildFile; fileRef = 75BCC374234D0045001CA01A /* Quake.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,10 @@
 		75BCC366234CF651001CA01A /* LSIQuakesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakesTests.m; sourceTree = "<group>"; };
 		75BCC368234CF705001CA01A /* LSIQuake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuake.h; sourceTree = "<group>"; };
 		75BCC369234CF705001CA01A /* LSIQuake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuake.m; sourceTree = "<group>"; };
+		75BCC36D234CF821001CA01A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		75BCC36F234CFB51001CA01A /* QuakeResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuakeResponse.json; sourceTree = "<group>"; };
+		75BCC370234CFB52001CA01A /* LSIFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIFileHelper.h; sourceTree = "<group>"; };
+		75BCC374234D0045001CA01A /* Quake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quake.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BCC36E234CF821001CA01A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,7 @@
 				75BCC338234CEF1E001CA01A /* Quake-Objc */,
 				75BCC35C234CF623001CA01A /* Quake-ObjcTests */,
 				75BCC337234CEF1E001CA01A /* Products */,
+				75BCC36C234CF821001CA01A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,8 +113,11 @@
 		75BCC35C234CF623001CA01A /* Quake-ObjcTests */ = {
 			isa = PBXGroup;
 			children = (
+				75BCC370234CFB52001CA01A /* LSIFileHelper.h */,
+				75BCC36F234CFB51001CA01A /* QuakeResponse.json */,
 				75BCC366234CF651001CA01A /* LSIQuakesTests.m */,
 				75BCC35F234CF623001CA01A /* Info.plist */,
+				75BCC374234D0045001CA01A /* Quake.json */,
 			);
 			path = "Quake-ObjcTests";
 			sourceTree = "<group>";
@@ -119,6 +131,14 @@
 				75BCC369234CF705001CA01A /* LSIQuake.m */,
 			);
 			path = EarthquakeMap;
+			sourceTree = "<group>";
+		};
+		75BCC36C234CF821001CA01A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75BCC36D234CF821001CA01A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BCC371234CFB52001CA01A /* QuakeResponse.json in Resources */,
+				75BCC375234D0045001CA01A /* Quake.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
