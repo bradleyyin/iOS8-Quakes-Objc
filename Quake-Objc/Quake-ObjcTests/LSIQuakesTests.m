@@ -36,6 +36,9 @@
     //"mag" = 1.29
     
     XCTAssertEqualWithAccuracy(1.29, quake.magnitude, 0.001);
+    XCTAssertEqualObjects(@"10km SSW of Idyllwild, CA", quake.place);
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:1388620296020 / 1000.0];
+    XCTAssertEqualObjects(date, quake.time);
 }
 
 @end

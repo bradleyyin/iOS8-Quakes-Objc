@@ -12,6 +12,10 @@
 @interface LSIQuake : NSObject
 
 @property double magnitude;
+@property NSString *place;
+@property NSDate *time;
+//@property double *latitude;
+//@property double *longitude; TODO:implement these later
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
